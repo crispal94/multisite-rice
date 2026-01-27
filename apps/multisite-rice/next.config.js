@@ -1,20 +1,29 @@
 //@ts-check
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { composePlugins, withNx } = require('@nx/next');
 
 /**
  * @type {import('@nx/next/plugins/with-nx').WithNxOptions}
  **/
 const nextConfig = {
-  // Use this to set Nx-specific options
-  // See: https://nx.dev/recipes/next/next-config-setup
-  nx: {},
+  output: 'standalone',
+  transpilePackages: ['@multisite-rice/ui'],
+  nx: {
+    // svgr: false,
+  },
+  webpack: (config, { isServer }) => {
+    // Asegura que webpack resuelva correctamente los módulos del monorepo
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@multisite-rice/ui': require('path').resolve(
+        __dirname,
+        '../../libs/ui/src/index.ts',
+      ),
+    };
+    return config;
+  },
 };
 
-const plugins = [
-  // Add more Next.js plugins to this list if needed.
-  withNx,
-];
+const plugins = [withNx];
 
 module.exports = composePlugins(...plugins)(nextConfig);
