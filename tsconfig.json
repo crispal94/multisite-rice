@@ -8,6 +8,9 @@
     },
     {
       "path": "./apps/multisite-rice"
+    },
+    {
+      "path": "./libs/ui"
     }
   ]
 }

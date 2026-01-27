@@ -16,6 +16,10 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["@multisite-rice/source"]
+    "customConditions": ["@multisite-rice/source"],
+    "baseUrl": ".",
+    "paths": {
+      "@multisite-rice/ui": ["libs/ui/src/index.ts"]
+    }
   }
 }
