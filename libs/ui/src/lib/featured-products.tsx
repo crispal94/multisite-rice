@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export const FeaturedProducts = () => {
   const products = [
     {
@@ -67,10 +69,15 @@ export const FeaturedProducts = () => {
             className="flex flex-col p-4 rounded-2xl border border-transparent transition-all group bg-background-light dark:bg-stone-800/50 hover:shadow-soft hover:border-stone-200 dark:hover:border-stone-700"
           >
             <div className="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-stone-100 mb-4">
-              <div
-                className="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-105"
-                style={{ backgroundImage: `url('${product.imageUrl}')` }}
-              ></div>
+              <div className="absolute inset-0">
+                <Image
+                  src={product.imageUrl}
+                  alt={product.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                />
+              </div>
               {product.bestseller && (
                 <span className="absolute top-3 left-3 px-2 py-1 rounded bg-accent text-white text-[10px] font-bold uppercase tracking-wider">
                   Más Vendido

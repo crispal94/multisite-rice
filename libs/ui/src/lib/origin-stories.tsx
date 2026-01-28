@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export const OriginStories = () => {
   return (
     <section className="py-16 bg-secondary/10 dark:bg-stone-900/50">
@@ -29,14 +31,15 @@ export const OriginStories = () => {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           <div className="flex overflow-hidden relative flex-col h-full rounded-xl transition-all group bg-surface-light dark:bg-surface-dark shadow-card hover:shadow-soft">
             <div className="aspect-[4/3] overflow-hidden bg-stone-200 relative">
-              <div
-                className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-105"
-                data-alt="Farmer in rice paddy field in Thailand"
-                style={{
-                  backgroundImage:
-                    "url('/images/royal_hermitage_basmati_rice.png')",
-                }}
-              ></div>
+              <div className="absolute inset-0">
+                <Image
+                  src="/images/royal_hermitage_basmati_rice.png"
+                  alt="Farmer in rice paddy field in Thailand"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                />
+              </div>
             </div>
             <div className="flex flex-col flex-grow p-6">
               <div className="flex gap-2 items-center mb-2">
@@ -67,14 +70,15 @@ export const OriginStories = () => {
           </div>
           <div className="flex overflow-hidden relative flex-col h-full rounded-xl transition-all group bg-surface-light dark:bg-surface-dark shadow-card hover:shadow-soft">
             <div className="aspect-[4/3] overflow-hidden bg-stone-200 relative">
-              <div
-                className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-105"
-                data-alt="Terraced rice fields in Himalayas"
-                style={{
-                  backgroundImage:
-                    "url('/images/organic_white_jasmine_rice.png')",
-                }}
-              ></div>
+              <div className="absolute inset-0">
+                <Image
+                  src="/images/organic_white_jasmine_rice.png"
+                  alt="Terraced rice fields in Himalayas"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                />
+              </div>
             </div>
             <div className="flex flex-col flex-grow p-6">
               <div className="flex gap-2 items-center mb-2">
@@ -105,13 +109,15 @@ export const OriginStories = () => {
           </div>
           <div className="flex overflow-hidden relative flex-col h-full rounded-xl transition-all group bg-surface-light dark:bg-surface-dark shadow-card hover:shadow-soft">
             <div className="aspect-[4/3] overflow-hidden bg-stone-200 relative">
-              <div
-                className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-105"
-                data-alt="Hands holding raw rice grains"
-                style={{
-                  backgroundImage: "url('/images/forbidden_black_rice.png')",
-                }}
-              ></div>
+              <div className="absolute inset-0">
+                <Image
+                  src="/images/forbidden_black_rice.png"
+                  alt="Hands holding raw rice grains"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                />
+              </div>
             </div>
             <div className="flex flex-col flex-grow p-6">
               <div className="flex gap-2 items-center mb-2">
@@ -142,14 +148,15 @@ export const OriginStories = () => {
           </div>
           <div className="flex overflow-hidden relative flex-col h-full rounded-xl transition-all group bg-surface-light dark:bg-surface-dark shadow-card hover:shadow-soft">
             <div className="aspect-[4/3] overflow-hidden bg-stone-200 relative">
-              <div
-                className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-105"
-                data-alt="Traditional rice drying method"
-                style={{
-                  backgroundImage:
-                    "url('/images/classic_arborio_rissotto_rice.png')",
-                }}
-              ></div>
+              <div className="absolute inset-0">
+                <Image
+                  src="/images/classic_arborio_rissotto_rice.png"
+                  alt="Traditional rice drying method"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                />
+              </div>
             </div>
             <div className="flex flex-col flex-grow p-6">
               <div className="flex gap-2 items-center mb-2">

@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export const Hero = () => {
   return (
     <section className="overflow-hidden relative px-4 py-8 w-full sm:px-6 lg:px-8">
@@ -48,13 +50,16 @@ export const Hero = () => {
             </div>
           </div>
           <div className="relative w-full h-64 lg:h-full lg:w-1/2 bg-stone-200 dark:bg-stone-800">
-            <div
-              className="absolute inset-0 w-full h-full bg-center bg-no-repeat bg-cover"
-              data-alt="Close up of ripe golden rice stalks in a field at sunset"
-              style={{
-                backgroundImage: "url('/images/hero-rice-sunset.jpg')",
-              }}
-            ></div>
+            <div className="absolute inset-0">
+              <Image
+                src="/images/hero-rice-sunset.jpg"
+                alt="Close up of ripe golden rice stalks in a field at sunset"
+                fill
+                priority
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
             <div className="absolute inset-0 bg-gradient-to-t to-transparent from-stone-900/20 lg:bg-gradient-to-l lg:from-transparent lg:to-transparent"></div>
           </div>
         </div>
