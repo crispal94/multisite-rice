@@ -3,34 +3,36 @@
 export const FeaturedProducts = () => {
   const products = [
     {
-      tag: 'Himalayan Origin',
-      title: 'Royal Heritage Basmati',
-      description: 'Aged for 2 years for perfect fluffiness and aroma.',
+      tag: 'Origen Himalaya',
+      title: 'Basmati Herencia Real',
+      description:
+        'Envejecido por 2 años para una esponjosidad y aroma perfectos.',
       price: '$14.00',
       unit: '/ 2kg',
       imageUrl: '/images/royal_hermitage_basmati_rice.png',
     },
     {
       tag: 'Thai Hom Mali',
-      title: 'Organic White Jasmine',
-      description: 'Floral notes with a silky soft texture.',
+      title: 'Jazmín Blanco Orgánico',
+      description: 'Notas florales con una textura suave y sedosa.',
       price: '$12.50',
       unit: '/ 2kg',
       bestseller: true,
       imageUrl: '/images/organic_white_jasmine_rice.png',
     },
     {
-      tag: 'Superfood',
-      title: 'Forbidden Black Rice',
-      description: 'High in antioxidants with a nutty flavor profile.',
+      tag: 'Superalimento',
+      title: 'Arroz Negro Prohibido',
+      description: 'Alto en antioxidantes con un perfil de sabor a nuez.',
       price: '$18.00',
       unit: '/ 1kg',
       imageUrl: '/images/forbidden_black_rice.png',
     },
     {
-      tag: 'Italian Reserve',
-      title: 'Classic Arborio Risotto',
-      description: 'Perfectly starchy for creamy, authentic risotto.',
+      tag: 'Reserva Italiana',
+      title: 'Risotto Arborio Clásico',
+      description:
+        'Perfectamente almidonado para un risotto cremoso y auténtico.',
       price: '$15.50',
       unit: '/ 1kg',
       imageUrl: '/images/classic_arborio_rissotto_rice.png',
@@ -42,17 +44,17 @@ export const FeaturedProducts = () => {
       <div className="flex justify-between items-center mb-10">
         <div>
           <h2 className="text-2xl font-bold font-display text-text-main dark:text-white">
-            Premium Selections
+            Selecciones Premium
           </h2>
           <p className="mt-1 text-sm text-text-muted">
-            Our most coveted harvests.
+            Nuestras cosechas más codiciadas.
           </p>
         </div>
         <a
           className="flex gap-1 items-center text-sm font-semibold text-primary hover:text-primary-hover group"
           href="#"
         >
-          View All Products
+          Ver Todos los Productos
           <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">
             arrow_forward
           </span>
@@ -71,7 +73,7 @@ export const FeaturedProducts = () => {
               ></div>
               {product.bestseller && (
                 <span className="absolute top-3 left-3 px-2 py-1 rounded bg-accent text-white text-[10px] font-bold uppercase tracking-wider">
-                  Bestseller
+                  Más Vendido
                 </span>
               )}
               <button className="absolute top-3 right-3 p-2 rounded-full shadow-sm opacity-0 backdrop-blur-sm transition-opacity bg-white/90 text-stone-600 group-hover:opacity-100 hover:text-red-500">

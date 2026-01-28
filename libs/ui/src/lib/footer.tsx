@@ -17,8 +17,9 @@ export const Footer = () => {
               </span>
             </div>
             <p className="text-text-muted dark:text-stone-400 text-sm leading-relaxed max-w-xs mb-6">
-              Cultivating the world's finest organic rice varieties while
-              supporting sustainable farming communities across the globe.
+              Cultivando las mejores variedades de arroz orgánico del mundo
+              mientras apoyamos a las comunidades agrícolas sostenibles en todo
+              el mundo.
             </p>
             <div className="flex gap-4">
               <a
@@ -61,7 +62,7 @@ export const Footer = () => {
           </div>
           <div>
             <h3 className="text-sm font-bold uppercase tracking-wider text-text-main dark:text-white mb-4">
-              Shop
+              Tienda
             </h3>
             <ul className="space-y-3">
               <li>
@@ -69,7 +70,7 @@ export const Footer = () => {
                   className="text-sm text-text-muted hover:text-primary transition-colors"
                   href="#"
                 >
-                  All Varieties
+                  Todas las Variedades
                 </a>
               </li>
               <li>
@@ -77,7 +78,7 @@ export const Footer = () => {
                   className="text-sm text-text-muted hover:text-primary transition-colors"
                   href="#"
                 >
-                  Organic Basmati
+                  Basmati Orgánico
                 </a>
               </li>
               <li>
@@ -85,7 +86,7 @@ export const Footer = () => {
                   className="text-sm text-text-muted hover:text-primary transition-colors"
                   href="#"
                 >
-                  Jasmine Rice
+                  Arroz Jazmín
                 </a>
               </li>
               <li>
@@ -93,7 +94,7 @@ export const Footer = () => {
                   className="text-sm text-text-muted hover:text-primary transition-colors"
                   href="#"
                 >
-                  Specialty Grains
+                  Granos Especiales
                 </a>
               </li>
               <li>
@@ -101,14 +102,14 @@ export const Footer = () => {
                   className="text-sm text-text-muted hover:text-primary transition-colors"
                   href="#"
                 >
-                  Bulk Wholesale
+                  Venta al por Mayor a Granel
                 </a>
               </li>
             </ul>
           </div>
           <div>
             <h3 className="text-sm font-bold uppercase tracking-wider text-text-main dark:text-white mb-4">
-              Learn
+              Aprende
             </h3>
             <ul className="space-y-3">
               <li>
@@ -116,7 +117,7 @@ export const Footer = () => {
                   className="text-sm text-text-muted hover:text-primary transition-colors"
                   href="#"
                 >
-                  Our Farmers
+                  Nuestros Agricultores
                 </a>
               </li>
               <li>
@@ -124,7 +125,7 @@ export const Footer = () => {
                   className="text-sm text-text-muted hover:text-primary transition-colors"
                   href="#"
                 >
-                  Farming Practices
+                  Prácticas Agrícolas
                 </a>
               </li>
               <li>
@@ -132,7 +133,7 @@ export const Footer = () => {
                   className="text-sm text-text-muted hover:text-primary transition-colors"
                   href="#"
                 >
-                  Recipes & Ti
+                  Recetas y Consejos
                 </a>
               </li>
               <li>
@@ -140,14 +141,14 @@ export const Footer = () => {
                   className="text-sm text-text-muted hover:text-primary transition-colors"
                   href="#"
                 >
-                  Sustainability Blog
+                  Blog de Sostenibilidad
                 </a>
               </li>
             </ul>
           </div>
           <div>
             <h3 className="text-sm font-bold uppercase tracking-wider text-text-main dark:text-white mb-4">
-              Company
+              Empresa
             </h3>
             <ul className="space-y-3">
               <li>
@@ -155,7 +156,7 @@ export const Footer = () => {
                   className="text-sm text-text-muted hover:text-primary transition-colors"
                   href="#"
                 >
-                  About Oryza
+                  Sobre Oryza
                 </a>
               </li>
               <li>
@@ -163,7 +164,7 @@ export const Footer = () => {
                   className="text-sm text-text-muted hover:text-primary transition-colors"
                   href="#"
                 >
-                  Careers
+                  Carreras
                 </a>
               </li>
               <li>
@@ -171,7 +172,7 @@ export const Footer = () => {
                   className="text-sm text-text-muted hover:text-primary transition-colors"
                   href="#"
                 >
-                  Contact Us
+                  Contáctanos
                 </a>
               </li>
               <li>
@@ -179,7 +180,7 @@ export const Footer = () => {
                   className="text-sm text-text-muted hover:text-primary transition-colors"
                   href="#"
                 >
-                  Terms of Service
+                  Términos de Servicio
                 </a>
               </li>
               <li>
@@ -187,7 +188,7 @@ export const Footer = () => {
                   className="text-sm text-text-muted hover:text-primary transition-colors"
                   href="#"
                 >
-                  Privacy Policy
+                  Política de Privacidad
                 </a>
               </li>
             </ul>
@@ -195,7 +196,7 @@ export const Footer = () => {
         </div>
         <div className="border-t border-stone-200 dark:border-stone-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-stone-400">
-            © 2024 Oryza Organic Rice Co. All rights reserved.
+            © 2024 Oryza Organic Rice Co. Todos los derechos reservados.
           </p>
           <div className="flex items-center gap-4 opacity-50 grayscale hover:grayscale-0 transition-all">
             <span className="text-stone-400 font-serif italic text-lg">

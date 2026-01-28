@@ -24,7 +24,7 @@ export const StickyHeader = () => {
               </div>
               <input
                 className="block w-full rounded-xl border-stone-200 dark:border-stone-700 bg-surface-light dark:bg-surface-dark py-2.5 pl-10 pr-4 text-sm text-text-main dark:text-white placeholder-stone-400 focus:border-primary focus:ring-1 focus:ring-primary transition-all shadow-sm outline-none"
-                placeholder="Search varieties..."
+                placeholder="Buscar variedades..."
                 type="text"
               />
             </div>
@@ -32,16 +32,16 @@ export const StickyHeader = () => {
           <div className="flex items-center gap-6">
             <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-text-muted dark:text-stone-300">
               <a className="hover:text-primary transition-colors" href="#">
-                Varieties
+                Variedades
               </a>
               <a className="hover:text-primary transition-colors" href="#">
-                Our Origins
+                Nuestros Orígenes
               </a>
               <a className="hover:text-primary transition-colors" href="#">
-                Recipes
+                Recetas
               </a>
               <a className="hover:text-primary transition-colors" href="#">
-                Wholesale
+                Venta al por Mayor
               </a>
             </nav>
             <div className="flex items-center gap-3">

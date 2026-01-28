@@ -6,7 +6,7 @@ export const Certifications = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="font-display text-2xl font-bold text-text-main dark:text-white mb-8">
-            Our Certifications & Commitments
+            Nuestras Certificaciones y Compromisos
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pb-12">
             <div className="flex flex-col items-center text-center gap-3">
@@ -16,10 +16,10 @@ export const Certifications = () => {
                 </span>
               </div>
               <h3 className="text-sm font-bold uppercase tracking-wider text-text-main dark:text-white">
-                USDA Organic
+                Orgánico USDA
               </h3>
               <p className="text-xs text-text-muted">
-                Certified free of synthetic pesticides and fertilizers.
+                Certificado libre de pesticidas y fertilizantes sintéticos.
               </p>
             </div>
             <div className="flex flex-col items-center text-center gap-3">
@@ -29,10 +29,11 @@ export const Certifications = () => {
                 </span>
               </div>
               <h3 className="text-sm font-bold uppercase tracking-wider text-text-main dark:text-white">
-                Fair Trade
+                Comercio Justo
               </h3>
               <p className="text-xs text-text-muted">
-                Direct partnerships ensuring fair wages for farmers.
+                Asociaciones directas que garantizan salarios justos para los
+                agricultores.
               </p>
             </div>
             <div className="flex flex-col items-center text-center gap-3">
@@ -42,10 +43,10 @@ export const Certifications = () => {
                 </span>
               </div>
               <h3 className="text-sm font-bold uppercase tracking-wider text-text-main dark:text-white">
-                Non-GMO Project
+                Proyecto Sin OGM
               </h3>
               <p className="text-xs text-text-muted">
-                Verified non-genetically modified organisms.
+                Verificado organismos no modificados genéticamente.
               </p>
             </div>
             <div className="flex flex-col items-center text-center gap-3">
@@ -55,10 +56,10 @@ export const Certifications = () => {
                 </span>
               </div>
               <h3 className="text-sm font-bold uppercase tracking-wider text-text-main dark:text-white">
-                Sustainable Packaging
+                Empaque Sostenible
               </h3>
               <p className="text-xs text-text-muted">
-                100% biodegradable and recyclable materials.
+                Materiales 100% biodegradables y reciclables.
               </p>
             </div>
           </div>

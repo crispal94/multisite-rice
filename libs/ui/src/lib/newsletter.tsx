@@ -6,24 +6,24 @@ export const Newsletter = () => {
       <div className="relative overflow-hidden rounded-3xl bg-primary px-6 py-12 sm:px-12 sm:py-16 lg:flex lg:items-center lg:justify-between shadow-xl">
         <div className="relative z-10">
           <h2 className="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Join our community
+            Únete a nuestra comunidad
           </h2>
           <p className="mt-3 max-w-xl text-lg text-stone-200 font-light">
-            Receive exclusive recipes, harvest updates, and special offers on
-            our premium grains.
+            Recibe recetas exclusivas, actualizaciones de cosechas y ofertas
+            especiales en nuestros granos premium.
           </p>
         </div>
         <div className="mt-8 lg:mt-0 lg:ml-8 relative z-10 w-full max-w-md">
           <form className="sm:flex gap-2">
             <label className="sr-only" htmlFor="email-address">
-              Email address
+              Dirección de correo electrónico
             </label>
             <input
               autoComplete="email"
               className="w-full rounded-xl border-white/20 bg-white/10 px-5 py-3 placeholder-stone-300 text-white focus:border-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary backdrop-blur-sm outline-none"
               id="email-address"
               name="email"
-              placeholder="Enter your email"
+              placeholder="Ingresa tu correo"
               required
               type="email"
             />
@@ -31,16 +31,16 @@ export const Newsletter = () => {
               className="mt-3 flex w-full items-center justify-center rounded-xl border border-transparent bg-secondary px-5 py-3 text-base font-bold text-text-main hover:bg-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary sm:mt-0 sm:w-auto sm:flex-shrink-0 transition-colors"
               type="submit"
             >
-              Subscribe
+              Suscribirse
             </button>
           </form>
           <p className="mt-3 text-sm text-stone-300">
-            We respect your privacy. Read our{' '}
+            Respetamos tu privacidad. Lee nuestra{' '}
             <a
               className="font-medium text-white underline decoration-1 underline-offset-2"
               href="#"
             >
-              Privacy Policy
+              Política de Privacidad
             </a>
             .
           </p>

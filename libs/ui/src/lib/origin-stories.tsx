@@ -7,14 +7,14 @@ export const OriginStories = () => {
         <div className="flex flex-col gap-4 justify-between mb-10 md:flex-row md:items-end">
           <div>
             <span className="text-sm font-bold tracking-wider uppercase text-primary">
-              Know Your Farmer
+              Conoce a tu Agricultor
             </span>
             <h2 className="mt-1 text-3xl font-bold font-display text-text-main dark:text-white">
-              Origin Stories
+              Historias de Origen
             </h2>
             <p className="mt-2 max-w-lg text-text-muted">
-              Every grain has a journey. Discover the people and places behind
-              our premium collections.
+              Cada grano tiene un viaje. Descubre las personas y lugares detrás
+              de nuestras colecciones premium.
             </p>
           </div>
           <div className="flex gap-2">
@@ -44,21 +44,21 @@ export const OriginStories = () => {
                   location_on
                 </span>
                 <span className="text-xs font-bold uppercase text-stone-500">
-                  Chiang Rai, Thailand
+                  Chiang Rai, Tailandia
                 </span>
               </div>
               <h3 className="mb-2 text-lg font-bold transition-colors font-display text-text-main dark:text-white group-hover:text-primary">
                 The Jasmine Harvest
               </h3>
               <p className="mb-4 text-sm leading-relaxed text-text-muted">
-                Meet the cooperative dedicated to preserving the fragrance of
-                authentic Hom Mali.
+                Conoce la cooperativa dedicada a preservar la fragancia del
+                auténtico Hom Mali.
               </p>
               <a
                 className="inline-flex items-center mt-auto text-sm font-semibold text-primary"
                 href="#"
               >
-                Read Story{' '}
+                Leer Historia{' '}
                 <span className="ml-1 text-sm material-symbols-outlined">
                   arrow_forward
                 </span>
@@ -86,17 +86,17 @@ export const OriginStories = () => {
                 </span>
               </div>
               <h3 className="mb-2 text-lg font-bold transition-colors font-display text-text-main dark:text-white group-hover:text-primary">
-                High Altitude Purity
+                Pureza de Gran Altitud
               </h3>
               <p className="mb-4 text-sm leading-relaxed text-text-muted">
-                Why glacial water makes our Basmati rice exceptionally long and
-                fluffy.
+                Por qué el agua glacial hace que nuestro arroz Basmati sea
+                excepcionalmente largo y esponjoso.
               </p>
               <a
                 className="inline-flex items-center mt-auto text-sm font-semibold text-primary"
                 href="#"
               >
-                Read Story{' '}
+                Leer Historia{' '}
                 <span className="ml-1 text-sm material-symbols-outlined">
                   arrow_forward
                 </span>
@@ -119,21 +119,21 @@ export const OriginStories = () => {
                   location_on
                 </span>
                 <span className="text-xs font-bold uppercase text-stone-500">
-                  Piedmont, Italy
+                  Piedamonte, Italia
                 </span>
               </div>
               <h3 className="mb-2 text-lg font-bold transition-colors font-display text-text-main dark:text-white group-hover:text-primary">
-                The Risotto Tradition
+                La Tradición del Risotto
               </h3>
               <p className="mb-4 text-sm leading-relaxed text-text-muted">
-                Five generations of family farming in the heart of Italian rice
-                country.
+                Cinco generaciones de agricultura familiar en el corazón de la
+                región arrocera de Italia.
               </p>
               <a
                 className="inline-flex items-center mt-auto text-sm font-semibold text-primary"
                 href="#"
               >
-                Read Story{' '}
+                Leer Historia{' '}
                 <span className="ml-1 text-sm material-symbols-outlined">
                   arrow_forward
                 </span>
@@ -161,17 +161,17 @@ export const OriginStories = () => {
                 </span>
               </div>
               <h3 className="mb-2 text-lg font-bold transition-colors font-display text-text-main dark:text-white group-hover:text-primary">
-                Ancient Black Grains
+                Granos Negros Antiguos
               </h3>
               <p className="mb-4 text-sm leading-relaxed text-text-muted">
-                Rediscovering the "Emperor's Rice" and its modern health
-                benefits.
+                Redescubriendo el "Arroz del Emperador" y sus beneficios
+                modernos para la salud.
               </p>
               <a
                 className="inline-flex items-center mt-auto text-sm font-semibold text-primary"
                 href="#"
               >
-                Read Story{' '}
+                Leer Historia{' '}
                 <span className="ml-1 text-sm material-symbols-outlined">
                   arrow_forward
                 </span>

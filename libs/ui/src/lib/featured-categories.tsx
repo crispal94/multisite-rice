@@ -5,32 +5,32 @@ export const FeaturedCategories = () => {
     <section className="px-4 py-12 mx-auto w-full max-w-7xl sm:px-6 lg:px-8">
       <div className="mb-10 text-center">
         <h2 className="mb-2 text-3xl font-bold font-display text-text-main dark:text-white">
-          Shop by Variety
+          Compra por Variedad
         </h2>
         <p className="text-text-muted">
-          Curated grains from the world's finest harvests.
+          Granos seleccionados de las mejores cosechas del mundo.
         </p>
       </div>
       <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
         {[
           {
             title: 'Basmati',
-            subtitle: 'Aromatic & Long',
+            subtitle: 'Aromático y Largo',
             imageUrl: '/images/basmati_rice.png',
           },
           {
-            title: 'Jasmine',
-            subtitle: 'Fragrant & Soft',
+            title: 'Jazmín',
+            subtitle: 'Fragante y Suave',
             imageUrl: '/images/jasmine_rice.png',
           },
           {
-            title: 'Black Rice',
-            subtitle: 'Nutty & Rich',
+            title: 'Arroz Negro',
+            subtitle: 'Sabor a Nuez e Intenso',
             imageUrl: '/images/black_rice.png',
           },
           {
-            title: 'Brown Rice',
-            subtitle: 'Whole Grain',
+            title: 'Arroz Integral',
+            subtitle: 'Grano Entero',
             imageUrl: '/images/brown_rice.png',
           },
         ].map((category) => (
