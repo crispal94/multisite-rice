@@ -7,3 +7,6 @@ export * from './lib/origin-stories';
 export * from './lib/certifications';
 export * from './lib/newsletter';
 export * from './provider';
+export * from './lib/product-card';
+export * from './lib/product-filters';
+export * from './lib/sort-control';

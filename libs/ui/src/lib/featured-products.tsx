@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import { ProductCard } from './product-card';
 
 export const FeaturedProducts = () => {
   const products = [
@@ -62,58 +62,24 @@ export const FeaturedProducts = () => {
           </span>
         </a>
       </div>
-      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-        {products.map((product) => (
-          <div
-            key={product.title}
-            className="flex flex-col p-4 rounded-2xl border border-transparent transition-all group bg-background-light dark:bg-stone-800/50 hover:shadow-soft hover:border-stone-200 dark:hover:border-stone-700"
-          >
-            <div className="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-stone-100 mb-4">
-              <div className="absolute inset-0">
-                <Image
-                  src={product.imageUrl}
-                  alt={product.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                />
-              </div>
-              {product.bestseller && (
-                <span className="absolute top-3 left-3 px-2 py-1 rounded bg-accent text-white text-[10px] font-bold uppercase tracking-wider">
-                  Más Vendido
-                </span>
-              )}
-              <button className="absolute top-3 right-3 p-2 rounded-full shadow-sm opacity-0 backdrop-blur-sm transition-opacity bg-white/90 text-stone-600 group-hover:opacity-100 hover:text-red-500">
-                <span className="material-symbols-outlined text-[20px]">
-                  favorite
-                </span>
-              </button>
-            </div>
-            <div className="flex flex-col flex-grow gap-2">
-              <div className="text-xs font-bold tracking-wider uppercase text-primary">
-                {product.tag}
-              </div>
-              <h3 className="text-lg font-semibold leading-tight font-display text-text-main dark:text-white">
-                {product.title}
-              </h3>
-              <p className="text-sm text-text-muted line-clamp-2">
-                {product.description}
-              </p>
-              <div className="flex justify-between items-center pt-3 mt-auto">
-                <span className="text-lg font-bold text-text-main dark:text-white">
-                  {product.price}{' '}
-                  <span className="text-xs font-normal text-stone-500">
-                    {product.unit}
-                  </span>
-                </span>
-                <button className="flex justify-center items-center rounded-full transition-colors size-9 bg-stone-100 dark:bg-stone-700 text-text-main dark:text-white hover:bg-primary hover:text-white">
-                  <span className="material-symbols-outlined text-[20px]">
-                    add
-                  </span>
-                </button>
-              </div>
-            </div>
-          </div>
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {products.map((product, index) => (
+          <ProductCard
+            key={index}
+            title={product.title}
+            description={product.description}
+            price={product.price}
+            unit={product.unit}
+            imageUrl={product.imageUrl}
+            badges={[
+              { text: product.tag, color: 'primary' }, // Using custom style to match previous 'tag' look roughly or just generic
+              ...(product.bestseller
+                ? [{ text: 'Más Vendido', color: 'accent' } as const]
+                : []),
+            ]}
+            variant="simple"
+            showActions={false}
+          />
         ))}
       </div>
     </section>
