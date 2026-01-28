@@ -11,6 +11,18 @@ const nextConfig = {
   nx: {
     // svgr: false,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'lh3.googleusercontent.com',
+      },
+    ],
+  },
   webpack: (config, { isServer }) => {
     // Asegura que webpack resuelva correctamente los módulos del monorepo
     config.resolve.alias = {
