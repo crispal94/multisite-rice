@@ -4,109 +4,11 @@ import {
   ProductFilters,
   SortControl,
   ProductCard,
+  products,
 } from '@multisite-rice/ui';
 
 export default function CatalogPage() {
-  interface Product {
-    badges: {
-      text: string;
-      color: 'primary' | 'secondary' | 'accent' | 'red' | 'text-main';
-    }[];
-    title: string;
-    description: string;
-    price: string;
-    originalPrice?: string;
-    rating: number;
-    reviewCount: number;
-    country: string;
-    imageUrl: string;
-    tag?: string;
-  }
-
-  const products: Product[] = [
-    {
-      badges: [
-        { text: 'Orgánico', color: 'primary' },
-        { text: 'Añejado 2 Años', color: 'secondary' },
-      ],
-      title: 'Reserva Real Basmati',
-      description:
-        'Granos extra largos con aroma a nuez, añejados para una textura superior. Paquete de 5kg.',
-      price: '$24.00',
-      originalPrice: '$28.00',
-      rating: 4.9,
-      reviewCount: 128,
-      country: 'India',
-      imageUrl: '/images/royal_hermitage_basmati_rice.png',
-      tag: 'India',
-    },
-    {
-      badges: [
-        { text: 'Nueva Cosecha', color: 'accent' },
-        { text: 'Comercio Justo', color: 'secondary' },
-      ],
-      title: 'Jazmín Thai Hom Mali',
-      description:
-        'Auténtico arroz jazmín aromático de la provincia de Surin. Textura suave y húmeda.',
-      price: '$18.50',
-      imageUrl: '/images/organic_white_jasmine_rice.png',
-      rating: 4.7,
-      reviewCount: 85,
-      country: 'Tailandia',
-    },
-    {
-      badges: [{ text: 'Especialidad', color: 'text-main' }],
-      title: 'Arborio Superfino',
-      description:
-        'El grano clásico italiano para risotto cremoso. Alto contenido de almidón.',
-      price: '$15.00',
-      imageUrl: '/images/classic_arborio_rissotto_rice.png',
-      rating: 4.8,
-      reviewCount: 1200,
-      country: 'Italia',
-    },
-    {
-      badges: [
-        { text: 'Orgánico', color: 'primary' },
-        { text: 'Herencia', color: 'secondary' },
-      ],
-      title: 'Arroz Negro Prohibido',
-      description:
-        'Rico en antioxidantes con sabor a nuez. Antiguamente reservado para emperadores.',
-      price: '$12.99',
-      imageUrl: '/images/forbidden_black_rice.png',
-      rating: 4.6,
-      reviewCount: 450,
-      country: 'China',
-    },
-    {
-      // Duplicating manual entries from HTML as placeholders/examples to fill grid
-      badges: [
-        { text: '-20%', color: 'red' },
-        { text: 'Orgánico', color: 'primary' },
-      ],
-      title: 'Arroz para Sushi Premium',
-      description:
-        'Grano corto japonés auténtico. Pegajosidad perfecta para sushi y poke.',
-      price: '$17.60',
-      originalPrice: '$22.00',
-      imageUrl: '/images/jasmine_rice.png', // Assuming image exists or reuse
-      rating: 4.5,
-      reviewCount: 92,
-      country: 'Japón',
-    },
-    {
-      badges: [{ text: 'Grano Entero', color: 'secondary' }],
-      title: 'Integral de Grano Entero',
-      description:
-        'Denso en nutrientes con la capa de salvado intacta. Excelente fuente de fibra.',
-      price: '$14.00',
-      imageUrl: '/images/brown_rice.png',
-      rating: 4.3,
-      reviewCount: 210,
-      country: 'EE.UU.',
-    },
-  ];
+  /* products import handled via top-level import now */
 
   return (
     <div className="flex flex-col min-h-screen antialiased bg-background-light text-text-main">
@@ -216,13 +118,14 @@ export default function CatalogPage() {
                     description={product.description}
                     price={product.price}
                     imageUrl={product.imageUrl}
-                    badges={product.badges as any} // TS might complain about const readonly, casting for now or defining Type
+                    badges={product.badges}
                     originalPrice={product.originalPrice}
                     rating={product.rating}
                     reviewCount={product.reviewCount}
                     country={product.country}
                     showActions={true}
                     variant="catalog"
+                    href={`/spp/${product.slug}`}
                   />
                 </div>
               ))}

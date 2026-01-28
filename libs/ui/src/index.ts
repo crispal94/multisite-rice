@@ -13,3 +13,4 @@ export * from './lib/sort-control';
 export * from './lib/product-gallery';
 export * from './lib/product-details';
 export * from './lib/reviews-section';
+export * from './lib/data/mock-products';

@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import Image from 'next/image';
 
 interface Badge {
@@ -19,8 +20,9 @@ export interface ProductCardProps {
   rating?: number;
   reviewCount?: number;
   country?: string;
-  showActions?: boolean; // Controls "Add to Cart" and "Favorite"
-  variant?: 'simple' | 'catalog'; // 'simple' for homepage, 'catalog' for MPP
+  showActions?: boolean;
+  variant?: 'simple' | 'catalog';
+  href?: string;
 }
 
 export const ProductCard = ({
@@ -36,8 +38,9 @@ export const ProductCard = ({
   country,
   showActions = false,
   variant = 'simple',
+  href,
 }: ProductCardProps) => {
-  return (
+  const CardContent = (
     <div className="group relative flex flex-col bg-surface-light rounded-xl shadow-sm border border-secondary/50 overflow-hidden hover:shadow-lg hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-300 h-full">
       {/* Badges */}
       {badges.length > 0 && (
@@ -84,14 +87,6 @@ export const ProductCard = ({
         </button>
       )}
 
-      {/* Bestseller/Simple Tag (Homepage specific styled badge override) */}
-      {/* If we want to support the specific design of 'FeaturedProducts' where tag is above title or separate, 
-           we can adapt. But the MPP HTML puts badges on the image. 
-           The homepage 'FeaturedProducts' puts the 'tag' above the title in main body.
-           We can support this via 'variant' or just check if badges are passed. 
-           For now, let's stick to the MPP card structure which is more rich.
-       */}
-
       <div className="relative aspect-[4/5] overflow-hidden bg-stone-100">
         <Image
           src={imageUrl}
@@ -104,7 +99,10 @@ export const ProductCard = ({
         {/* Add to Cart Overlay (Catalog only) */}
         {showActions && (
           <div className="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 hidden lg:block">
-            <button className="w-full h-11 bg-primary hover:bg-primary-hover text-background-light font-semibold rounded-lg shadow-lg flex items-center justify-center gap-2 transition-colors">
+            <button
+              onClick={(e) => e.preventDefault()} // Prevent navigation if clicking add to cart
+              className="w-full h-11 bg-primary hover:bg-primary-hover text-background-light font-semibold rounded-lg shadow-lg flex items-center justify-center gap-2 transition-colors"
+            >
               <span className="material-symbols-outlined text-[20px]">
                 shopping_basket
               </span>
@@ -116,7 +114,7 @@ export const ProductCard = ({
 
       <div className="p-4 flex flex-col flex-1">
         <div className="mb-2 flex items-center justify-between">
-          {/* Rating or Tag */}
+          {/* Rating */}
           {rating ? (
             <div className="flex items-center gap-1">
               <span
@@ -130,11 +128,6 @@ export const ProductCard = ({
               </span>
             </div>
           ) : (
-            // Fallback for simple variant if needed, or empty
-            // Homepage uses 'tag' property which we can pass as badge or handle here.
-            // Homepage design: Tag is simple text above title. MPP has badges on image.
-            // Let's allow a 'subtitle' or 'category' prop if needed?
-            // MPP design has Country on the right side.
             <div />
           )}
 
@@ -170,7 +163,10 @@ export const ProductCard = ({
           </div>
 
           {/* Mobile/Small Add Button */}
-          <button className="lg:hidden h-10 w-10 bg-secondary/30 text-primary rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+          <button
+            onClick={(e) => e.preventDefault()}
+            className="lg:hidden h-10 w-10 bg-secondary/30 text-primary rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+          >
             <span className="material-symbols-outlined text-[20px]">
               {showActions ? 'add' : 'arrow_forward'}
             </span>
@@ -179,4 +175,14 @@ export const ProductCard = ({
       </div>
     </div>
   );
+
+  if (href) {
+    return (
+      <Link href={href} className="block h-full">
+        {CardContent}
+      </Link>
+    );
+  }
+
+  return CardContent;
 };
