@@ -3,7 +3,7 @@
 export const StickyHeader = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b backdrop-blur-md transition-all border-stone-200 dark:border-stone-800 bg-background-light/90 dark:bg-background-dark/90">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-0">
         <div className="flex gap-8 justify-between items-center h-20">
           <div className="flex gap-2 items-center cursor-pointer shrink-0">
             <div className="flex justify-center items-center text-white rounded-xl size-10 bg-primary">
@@ -11,8 +11,8 @@ export const StickyHeader = () => {
                 agriculture
               </span>
             </div>
-            <span className="hidden text-2xl font-bold tracking-tight font-display text-primary dark:text-white sm:block">
-              Agroindustrias Proarroz Marketplace
+            <span className="hidden text-lg font-bold tracking-tight font-display text-primary dark:text-white sm:block">
+              Agroindustrias
             </span>
           </div>
           <div className="hidden w-full max-w-md md:flex">
