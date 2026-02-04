@@ -2,22 +2,22 @@
 
 export const StickyHeader = () => {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-stone-200 dark:border-stone-800 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md transition-all">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between gap-8">
-          <div className="flex shrink-0 items-center gap-2 cursor-pointer">
-            <div className="flex size-10 items-center justify-center rounded-xl bg-primary text-white">
-              <span className="material-symbols-outlined text-2xl">
+    <header className="sticky top-0 z-50 w-full border-b backdrop-blur-md transition-all border-stone-200 dark:border-stone-800 bg-background-light/90 dark:bg-background-dark/90">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="flex gap-8 justify-between items-center h-20">
+          <div className="flex gap-2 items-center cursor-pointer shrink-0">
+            <div className="flex justify-center items-center text-white rounded-xl size-10 bg-primary">
+              <span className="text-2xl material-symbols-outlined">
                 agriculture
               </span>
             </div>
-            <span className="text-2xl font-display font-bold tracking-tight text-primary dark:text-white hidden sm:block">
-              Oryza
+            <span className="hidden text-2xl font-bold tracking-tight font-display text-primary dark:text-white sm:block">
+              Agroindustrias Proarroz Marketplace
             </span>
           </div>
-          <div className="hidden md:flex max-w-md w-full">
+          <div className="hidden w-full max-w-md md:flex">
             <div className="relative w-full group">
-              <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-stone-400 group-focus-within:text-primary transition-colors">
+              <div className="flex absolute inset-y-0 left-0 items-center pl-3 transition-colors pointer-events-none text-stone-400 group-focus-within:text-primary">
                 <span className="material-symbols-outlined text-[20px]">
                   search
                 </span>
@@ -29,42 +29,42 @@ export const StickyHeader = () => {
               />
             </div>
           </div>
-          <div className="flex items-center gap-6">
-            <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-text-muted dark:text-stone-300">
-              <a className="hover:text-primary transition-colors" href="#">
+          <div className="flex gap-6 items-center">
+            <nav className="hidden gap-8 items-center text-sm font-medium lg:flex text-text-muted dark:text-stone-300">
+              <a className="transition-colors hover:text-primary" href="#">
                 Variedades
               </a>
-              <a className="hover:text-primary transition-colors" href="#">
+              <a className="transition-colors hover:text-primary" href="#">
                 Nuestros Orígenes
               </a>
-              <a className="hover:text-primary transition-colors" href="#">
+              <a className="transition-colors hover:text-primary" href="#">
                 Recetas
               </a>
-              <a className="hover:text-primary transition-colors" href="#">
+              <a className="transition-colors hover:text-primary" href="#">
                 Venta al por Mayor
               </a>
             </nav>
-            <div className="flex items-center gap-3">
-              <button className="flex items-center justify-center size-10 rounded-full hover:bg-stone-100 dark:hover:bg-stone-800 text-text-main dark:text-stone-200 transition-colors md:hidden">
+            <div className="flex gap-3 items-center">
+              <button className="flex justify-center items-center rounded-full transition-colors size-10 hover:bg-stone-100 dark:hover:bg-stone-800 text-text-main dark:text-stone-200 md:hidden">
                 <span className="material-symbols-outlined text-[24px]">
                   search
                 </span>
               </button>
-              <button className="relative flex items-center justify-center size-10 rounded-full hover:bg-stone-100 dark:hover:bg-stone-800 text-text-main dark:text-stone-200 transition-colors group">
+              <button className="flex relative justify-center items-center rounded-full transition-colors size-10 hover:bg-stone-100 dark:hover:bg-stone-800 text-text-main dark:text-stone-200 group">
                 <span className="material-symbols-outlined text-[24px] group-hover:text-primary transition-colors">
                   shopping_basket
                 </span>
                 <span className="absolute top-1.5 right-1.5 flex h-2.5 w-2.5">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                  <span className="inline-flex absolute w-full h-full rounded-full opacity-75 animate-ping bg-accent"></span>
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-accent"></span>
                 </span>
               </button>
-              <button className="flex items-center justify-center size-10 rounded-full hover:bg-stone-100 dark:hover:bg-stone-800 text-text-main dark:text-stone-200 transition-colors group">
+              <button className="flex justify-center items-center rounded-full transition-colors size-10 hover:bg-stone-100 dark:hover:bg-stone-800 text-text-main dark:text-stone-200 group">
                 <span className="material-symbols-outlined text-[24px] group-hover:text-primary transition-colors">
                   person
                 </span>
               </button>
-              <button className="flex items-center justify-center size-10 rounded-full hover:bg-stone-100 dark:hover:bg-stone-800 text-text-main dark:text-stone-200 transition-colors lg:hidden">
+              <button className="flex justify-center items-center rounded-full transition-colors size-10 hover:bg-stone-100 dark:hover:bg-stone-800 text-text-main dark:text-stone-200 lg:hidden">
                 <span className="material-symbols-outlined text-[24px]">
                   menu
                 </span>

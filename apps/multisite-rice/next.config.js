@@ -21,6 +21,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'lh3.googleusercontent.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'proarroz.com.ec',
+      },
     ],
   },
   webpack: (config, { isServer }) => {

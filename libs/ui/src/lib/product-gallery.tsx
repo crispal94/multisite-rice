@@ -23,7 +23,7 @@ export const ProductGallery = ({ images }: ProductGalleryProps) => {
           src={images[selectedImage].src}
           alt={images[selectedImage].alt}
           fill
-          className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+          className="object-contain object-center transition-transform duration-700 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, 50vw"
           priority
         />

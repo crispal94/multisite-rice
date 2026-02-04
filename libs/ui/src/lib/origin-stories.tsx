@@ -30,13 +30,13 @@ export const OriginStories = () => {
         </div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           <div className="flex overflow-hidden relative flex-col h-full rounded-xl transition-all group bg-surface-light dark:bg-surface-dark shadow-card hover:shadow-soft">
-            <div className="aspect-[4/3] overflow-hidden bg-stone-200 relative">
-              <div className="absolute inset-0">
+            <div className="aspect-[4/3] overflow-hidden bg-white relative border-b border-secondary/20">
+              <div className="absolute inset-0 p-4">
                 <Image
-                  src="/images/royal_hermitage_basmati_rice.png"
-                  alt="Farmer in rice paddy field in Thailand"
+                  src="https://proarroz.com.ec/wp-content/uploads/2022/01/costerito-gouurmet.jpg"
+                  alt="Costerito Gourmet Bag"
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="object-contain transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
@@ -47,19 +47,19 @@ export const OriginStories = () => {
                   location_on
                 </span>
                 <span className="text-xs font-bold uppercase text-stone-500">
-                  Chiang Rai, Tailandia
+                  Guayas, Ecuador
                 </span>
               </div>
               <h3 className="mb-2 text-lg font-bold transition-colors font-display text-text-main dark:text-white group-hover:text-primary">
-                The Jasmine Harvest
+                El Arte del Añejamiento
               </h3>
               <p className="mb-4 text-sm leading-relaxed text-text-muted">
-                Conoce la cooperativa dedicada a preservar la fragancia del
-                auténtico Hom Mali.
+                Descubre cómo nuestros 24 meses de reposo natural transforman
+                cada grano de Costerito Gourmet.
               </p>
               <a
                 className="inline-flex items-center mt-auto text-sm font-semibold text-primary"
-                href="#"
+                href="/spp/costerito-gourmet"
               >
                 Leer Historia{' '}
                 <span className="ml-1 text-sm material-symbols-outlined">
@@ -69,13 +69,13 @@ export const OriginStories = () => {
             </div>
           </div>
           <div className="flex overflow-hidden relative flex-col h-full rounded-xl transition-all group bg-surface-light dark:bg-surface-dark shadow-card hover:shadow-soft">
-            <div className="aspect-[4/3] overflow-hidden bg-stone-200 relative">
-              <div className="absolute inset-0">
+            <div className="aspect-[4/3] overflow-hidden bg-white relative border-b border-secondary/20">
+              <div className="absolute inset-0 p-4">
                 <Image
-                  src="/images/organic_white_jasmine_rice.png"
-                  alt="Terraced rice fields in Himalayas"
+                  src="https://proarroz.com.ec/wp-content/uploads/2022/01/cpremium.jpg"
+                  alt="Costerito Premium Bag"
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="object-contain transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
@@ -86,19 +86,19 @@ export const OriginStories = () => {
                   location_on
                 </span>
                 <span className="text-xs font-bold uppercase text-stone-500">
-                  Uttarakhand, India
+                  Daule, Ecuador
                 </span>
               </div>
               <h3 className="mb-2 text-lg font-bold transition-colors font-display text-text-main dark:text-white group-hover:text-primary">
-                Pureza de Gran Altitud
+                Selección Electrónica
               </h3>
               <p className="mb-4 text-sm leading-relaxed text-text-muted">
-                Por qué el agua glacial hace que nuestro arroz Basmati sea
-                excepcionalmente largo y esponjoso.
+                La tecnología de punta nos permite garantizar un arroz 99% libre
+                de granos partidos.
               </p>
               <a
                 className="inline-flex items-center mt-auto text-sm font-semibold text-primary"
-                href="#"
+                href="/spp/costerito-premium"
               >
                 Leer Historia{' '}
                 <span className="ml-1 text-sm material-symbols-outlined">
@@ -108,13 +108,13 @@ export const OriginStories = () => {
             </div>
           </div>
           <div className="flex overflow-hidden relative flex-col h-full rounded-xl transition-all group bg-surface-light dark:bg-surface-dark shadow-card hover:shadow-soft">
-            <div className="aspect-[4/3] overflow-hidden bg-stone-200 relative">
-              <div className="absolute inset-0">
+            <div className="aspect-[4/3] overflow-hidden bg-white relative border-b border-secondary/20">
+              <div className="absolute inset-0 p-4">
                 <Image
-                  src="/images/forbidden_black_rice.png"
-                  alt="Hands holding raw rice grains"
+                  src="https://proarroz.com.ec/wp-content/uploads/2022/01/sr.jpg"
+                  alt="Super Reina Rice Bag"
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="object-contain transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
@@ -125,19 +125,19 @@ export const OriginStories = () => {
                   location_on
                 </span>
                 <span className="text-xs font-bold uppercase text-stone-500">
-                  Piedamonte, Italia
+                  Los Rios, Ecuador
                 </span>
               </div>
               <h3 className="mb-2 text-lg font-bold transition-colors font-display text-text-main dark:text-white group-hover:text-primary">
-                La Tradición del Risotto
+                Calidad de Siempre
               </h3>
               <p className="mb-4 text-sm leading-relaxed text-text-muted">
-                Cinco generaciones de agricultura familiar en el corazón de la
-                región arrocera de Italia.
+                Super Reina ha acompañado a las familias ecuatorianas por
+                generaciones, brindando rendimiento y sabor.
               </p>
               <a
                 className="inline-flex items-center mt-auto text-sm font-semibold text-primary"
-                href="#"
+                href="/spp/arroz-super-reina"
               >
                 Leer Historia{' '}
                 <span className="ml-1 text-sm material-symbols-outlined">
@@ -147,13 +147,13 @@ export const OriginStories = () => {
             </div>
           </div>
           <div className="flex overflow-hidden relative flex-col h-full rounded-xl transition-all group bg-surface-light dark:bg-surface-dark shadow-card hover:shadow-soft">
-            <div className="aspect-[4/3] overflow-hidden bg-stone-200 relative">
-              <div className="absolute inset-0">
+            <div className="aspect-[4/3] overflow-hidden bg-white relative border-b border-secondary/20">
+              <div className="absolute inset-0 p-4">
                 <Image
-                  src="/images/classic_arborio_rissotto_rice.png"
-                  alt="Traditional rice drying method"
+                  src="https://proarroz.com.ec/wp-content/uploads/2022/01/ag.jpg"
+                  alt="Arroz Gavilan Bag"
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="object-contain transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
@@ -164,19 +164,19 @@ export const OriginStories = () => {
                   location_on
                 </span>
                 <span className="text-xs font-bold uppercase text-stone-500">
-                  Heilongjiang, China
+                  Manabí, Ecuador
                 </span>
               </div>
               <h3 className="mb-2 text-lg font-bold transition-colors font-display text-text-main dark:text-white group-hover:text-primary">
-                Granos Negros Antiguos
+                Tradición y Sabor
               </h3>
               <p className="mb-4 text-sm leading-relaxed text-text-muted">
-                Redescubriendo el "Arroz del Emperador" y sus beneficios
-                modernos para la salud.
+                Un arroz que rinde homenaje a nuestras raíces y a la cocina
+                tradicional de la costa.
               </p>
               <a
                 className="inline-flex items-center mt-auto text-sm font-semibold text-primary"
-                href="#"
+                href="/spp/arroz-gavilan"
               >
                 Leer Historia{' '}
                 <span className="ml-1 text-sm material-symbols-outlined">

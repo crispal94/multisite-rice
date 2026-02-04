@@ -16,46 +16,50 @@ export const FeaturedCategories = () => {
       <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
         {[
           {
-            title: 'Basmati',
-            subtitle: 'Aromático y Largo',
-            imageUrl: '/images/basmati_rice.png',
+            title: 'Arroz Envejecido',
+            subtitle: 'Sabor y Textura Superior',
+            imageUrl:
+              'https://proarroz.com.ec/wp-content/uploads/2022/01/costerito-gouurmet.jpg',
           },
           {
-            title: 'Jazmín',
-            subtitle: 'Fragante y Suave',
-            imageUrl: '/images/jasmine_rice.png',
+            title: 'Arroz Premium',
+            subtitle: 'Selección Especial',
+            imageUrl:
+              'https://proarroz.com.ec/wp-content/uploads/2022/01/cpremium.jpg',
           },
           {
-            title: 'Arroz Negro',
-            subtitle: 'Sabor a Nuez e Intenso',
-            imageUrl: '/images/black_rice.png',
+            title: 'Arroz Blanco',
+            subtitle: 'Calidad de Siempre',
+            imageUrl:
+              'https://proarroz.com.ec/wp-content/uploads/2022/01/sr.jpg',
           },
           {
-            title: 'Arroz Integral',
-            subtitle: 'Grano Entero',
-            imageUrl: '/images/brown_rice.png',
+            title: 'Arroz Tradicional',
+            subtitle: 'El Sabor del Ecuador',
+            imageUrl:
+              'https://proarroz.com.ec/wp-content/uploads/2022/01/ag.jpg',
           },
         ].map((category) => (
           <a
             key={category.title}
-            className="group relative overflow-hidden rounded-2xl aspect-[4/5] bg-stone-200 cursor-pointer"
-            href="#"
+            className="group relative overflow-hidden rounded-2xl aspect-[4/5] bg-white border border-stone-200 cursor-pointer hover:shadow-lg transition-all"
+            href="/mpp"
           >
-            <div className="absolute inset-0">
+            <div className="absolute inset-0 p-4">
               <Image
                 src={category.imageUrl}
                 alt={category.title}
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                className="object-contain transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 768px) 50vw, 25vw"
               />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-t to-transparent transition-opacity from-black/60 via-black/20"></div>
-            <div className="absolute left-0 bottom-6 w-full text-center text-white">
-              <h3 className="mb-1 text-xl font-bold font-display">
+            <div className="absolute inset-0 pt-20 bg-gradient-to-t to-transparent transition-opacity from-black/80 via-black/20"></div>
+            <div className="absolute left-0 bottom-6 p-2 w-full text-center text-white">
+              <h3 className="mb-1 text-xl font-bold drop-shadow-md font-display">
                 {category.title}
               </h3>
-              <p className="text-xs tracking-widest uppercase text-stone-200">
+              <p className="text-xs tracking-widest uppercase drop-shadow-md text-stone-200">
                 {category.subtitle}
               </p>
             </div>
